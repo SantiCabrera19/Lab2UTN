@@ -1,17 +1,40 @@
-// Press Shift twice to open the Search Everywhere dialog and type `show whitespaces`,
-// then press Enter. You can now see whitespace characters in your code.
+import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args) {
-        // Press Alt+Intro with your caret at the highlighted text to see how
-        // IntelliJ IDEA suggests fixing it.
-        System.out.printf("Hello and welcome!");
+        // creamos el scanner
+        Scanner input = new Scanner(System.in);
+        // las variables del programa
+        int a,b,c;
+        // solicitamos los numeros al usuario y les asignamos su valor a las variables
+        System.out.println("Bienvenido, a continuacion ingrese 3 numeros para ordenarlos: ");
+        a = input.nextInt();
+        b= input.nextInt();
+        c = input.nextInt();
 
-        // Press Mayús+F10 or click the green arrow button in the gutter to run the code.
-        for (int i = 1; i <= 5; i++) {
-
-            // Press Mayús+F9 to start debugging your code. We have set one breakpoint
-            // for you, but you can always add more by pressing Ctrl+F8.
-            System.out.println("i = " + i);
+        System.out.println("Los numeros ordenados de mayor a menor: ");
+        // funcion para ordenar los numeros y mostramos
+        ordenarNumeros(a,b,c);
         }
+
+    private static void ordenarNumeros(int num1, int num2, int num3) {
+        int min, med, max;
+
+        // usamos la biblioteca de Math
+
+        if (num1 <= num2 && num1 <= num3) {
+            min = num1;
+            med = Math.min(num2, num3);
+            max = Math.max(num2, num3);
+        } else if (num2 <= num1 && num2 <= num3) {
+            min = num2;
+            med = Math.min(num1, num3);
+            max = Math.max(num1, num3);
+        } else {
+            min = num3;
+            med = Math.min(num1, num2);
+            max = Math.max(num1, num2);
+        }
+        System.out.println(max + " " + med + " " + min);
     }
 }
