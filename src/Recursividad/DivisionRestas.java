@@ -1,3 +1,5 @@
+package Recursividad;
+
 public class DivisionRestas {
 
     public static void main(String[] args) {
@@ -8,20 +10,20 @@ public class DivisionRestas {
         System.out.println("Resultado de la división iterativa: " + divisionIterativa(dividend, divisor));
     }
 
-    // Enfoque recursivo
+    // Primero desde la recursividad
     private static int divisionRecursiva(int dividendo, int divisor) {
         if (dividendo < divisor) {
             return 0;
         } else {
-            return 1 + divisionRecursiva(dividendo - divisor, divisor);
+            return 1 + divisionRecursiva(dividendo - divisor, divisor); // Aqui aplicamos la recursividad
         }
     }
 
-    // Enfoque iterativo
+    // Aqui desde un enfoque iterativo de ambas maneras se puede
     private static int divisionIterativa(int dividendo, int divisor) {
         int cociente = 0;
         while (dividendo >= divisor) {
-            dividendo -= divisor;
+            dividendo -= divisor; // con un while se puede lograr igualmente, evitamos la recursividad
             cociente++;
         }
         return cociente;

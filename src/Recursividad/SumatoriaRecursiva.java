@@ -1,3 +1,5 @@
+package Recursividad;
+
 public class SumatoriaRecursiva {
 
     public static void main(String[] args) {
