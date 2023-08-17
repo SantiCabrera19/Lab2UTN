@@ -5,8 +5,8 @@ public class Factorial {
     public static void main(String[] args) {
         int numero = 5;
 
-        System.out.println("Enfoque recursivo: El factorial de " + numero + " es: " + calcularFactorialRecursivo(numero));
-        System.out.println("Enfoque iterativo: El factorial de " + numero + " es: " + calcularFactorialIterativo(numero));
+        System.out.println("recursividad: El factorial de " + numero + " es igual a: " + calcularFactorialRecursivo(numero));
+        System.out.println("iterativa: El factorial de " + numero + " es igual : " + calcularFactorialIterativo(numero));
     }
 
     // Calculo del factorial con recursividad (source: Chatgpt)

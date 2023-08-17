@@ -5,8 +5,8 @@ public class SumatoriaRecursiva {
     public static void main(String[] args) {
         int n = 10;
 
-        System.out.println("Enfoque recursivo: La sumatoria de los números del 1 al " + n + " es: " + calcularSumatoriaRecursiva(n));
-        System.out.println("Enfoque iterativo: La sumatoria de los números del 1 al " + n + " es: " + calcularSumatoriaIterativa(n));
+        System.out.println("recursividad: La sumatoria de los números del 1 al " + n + " es igual a: " + calcularSumatoriaRecursiva(n));
+        System.out.println("iterativo: La sumatoria de los números del 1 al " + n + " es igual a: " + calcularSumatoriaIterativa(n));
     }
 
     // Funcion Sumatorio pero con recursividad
@@ -22,7 +22,7 @@ public class SumatoriaRecursiva {
     private static int calcularSumatoriaIterativa(int n) {
         int sumatoria = 0;
         for (int i = 1; i <= n; i++) {
-            sumatoria += i;
+            sumatoria += i; // Aqui la iteracion, ahorramos memoria y no usamos recursividad
         }
         return sumatoria;
     }
