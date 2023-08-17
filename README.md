@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 # Laboratorio de Programación @ UTN 🧪💻
 
 ¡Hola! 👋 Bienvenido al repositorio de ejercicios de Laboratorio de Programación de la Facultad de Ingeniería de la UTN (Universidad Tecnológica Nacional).
@@ -37,5 +37,5 @@ Contribuciones 🤝
 ¡Las contribuciones son bienvenidas! Si encuentras errores, tienes mejoras o deseas agregar tus propios ejercicios, no dudes en abrir un "pull request". Juntos podemos hacer que este repositorio sea aún más valioso para la comunidad de estudiantes.
 
 ## Contacto 📬
->>>>>>> be0c324fe4ea29c4564d26df4092bc3d32116a63
+
 Si tienes alguna pregunta, sugerencia o simplemente quieres conversar sobre programación, puedes contactarme por correo electrónico (cabrerasanty321gmail.com) o encontrar más información en mi perfil de GitHub.
